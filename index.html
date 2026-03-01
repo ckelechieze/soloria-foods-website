@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(97, 142, 127);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+         footer {
+            background-color: rgb(97, 142, 127);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: rgb(97, 142, 127);
+        }
+        header h1 {
+            color: white
+        }
+        button {
+            background-color: rgb(97, 142, 127);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Soloria Foods</h1>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Soloria Foods</h2>
+            <hr>
+            <p>Discover the rich taste and superior quality of Soloria Rice, proudly grown and processed in Nigeria. At Soloria Foods, we are committed to delivering premium Nigerian rice that is clean, stone-free, and perfect for every meal. Whether you're cooking for your family, hosting a celebration, or running a restaurant, Soloria Rice gives you the great taste, texture, and value you can trust.</p>
+            <p>Explore our premium range of Soloria Rice, including high-quality long-grain Nigerian rice carefully processed for purity, freshness, and great taste. Grown locally and prepared to meet the highest standards, Soloria Rice delivers the perfect texture and rich flavor for jollof rice, fried rice, and everyday family meals. Our commitment to excellence ensures that every bag meets strict quality standards, giving you rice you can trust every time.</p>
+            <p>Experience the rich taste and premium quality of Soloria Rice today. We invite you to visit our office at New Market, Enugu, to make your purchase and see the quality for yourself. Our team is always ready to serve you and ensure you get the very best Nigerian rice. Stop by today and enjoy the difference with Soloria Rice!</p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <hr>
+            <p>At Soloria Rice, our mission is to deliver high-quality Nigerian rice that families can trust and enjoy every day. We believe rice is more than just a staple food — it is the heart of many Nigerian meals and a symbol of togetherness. Our goal is to provide clean, well-processed, and great-tasting rice that brings families together around the table and supports local agriculture with pride.</p>
+            <p>We are committed to sustainability and ethical sourcing, ensuring that our products are not only delicious but also responsibly produced. By supporting local farmers and producers, we aim to contribute to a healthier planet and a more vibrant food culture.</p>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <hr>
+            <p>Below is a short video showcasing our products:</p>
+            <video controls width="550" height="300">
+                <source src="../media/soloria-video.mp4" type="video/mp4">
+            </video>
+        </section>
+        <br>
+
+        <section>
+            <h2>Order</h2>
+            <hr>
+            <p>Fill the form below to place your order</p>
+            <form>
+            <fieldset>
+                <legend><b>Personal Informations</b></legend>
+                <br>
+
+                <label for="fname">Full Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="full name" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                <br>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+234...">
+                <br>
+
+                <label for="gender">Gender</label><br>
+                <label for="male-gender">Male</label>
+                <input type="radio" id="male-gender" name="gender">
+                <label for="female-gender">Female</label>
+                <input type="radio" id="female-gender" name="gender">
+                <br>
+
+                <label for="home-address">Delivery Address:</label><br>
+                <textarea id="home-address" name="home-address" placeholder="Type the address where you want us to deliver the rice" cols="40" rows="4"></textarea>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><b>Order Details</b></legend>
+
+                <label for="service-type">Payment Type:</label>
+                <select id="service-type" name="service-type">
+                    <option value="tax">Cash</option>
+                    <option value="housing">POS</option>
+                    <option value="passport">Transfer</option>
+                </select>
+                <br>
+
+                <label for="priority">Order Type:</label><br>
+                <label for="normal-priority">Normal</label>
+                <input type="radio" id="normal-priority" name="priority">
+
+                <label for="urgent-priority">Urgent</label>
+                <input type="radio" id="urgent-priority" name="priority">
+                <br>
+
+                <label for="reference-field">Upload Document Payment Receipt</label>
+                <input type="file" id="reference-field" name="reference-field" accept=".pdf,.doc,.docx">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><b>Additional Informations</b></legend>
+                <label for="comment">Additional Comments:</label><br>
+                <textarea id="comment" name="comment" placeholder="Is there any other thing you think we should know?" cols="50" rows="5"></textarea>
+                <br>
+
+                <input type="checkbox" name="declaration" id="declaration" required>
+                <label for="declaration">I confirm all information is accurate</label>
+            </fieldset>
+            <br>
+
+            <button type="submit">Order Now</button>
+            <button type="reset">Cancel</button>
+        </form>
+        </section>
+
+            <h2>Contact</h2>
+            <footer id="contact">
+            <p>For inquiries, please contact us at:</p>
+             <address>
+            <br>
+            shop 26 new market<br>Enugu State<br>
+            Email: soloriafoods@gmail.com <br>
+            <i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/profile.php?id=61565082445745">@soloriafoods</a>
+            <p><i class="fa-solid fa-phone"></i>08111160225</p>
+             <small>&copy; 2026 Soloria Foods. All rights reserved.</small>
+        </address>
+            
+            </footer>
+            
+    </main>
+</body>
+</html>
