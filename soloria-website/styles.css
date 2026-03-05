@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* Visit Color Hunt website to get color inspirations for your website */
+
+.box {
+    width: fit-content;
+    border: 3px solid red;
+    background-color: #FFDD83;
+    padding: 30px;
+    color: #FFA47F;
+    height: 100px;
+    margin: 16px 30px 50px 80px;
+}
+
+.one {
+    width: fit-content;
+    border: 3px solid red;
+    background-color: #98DFD6;
+    padding: 30px;
+    color: #FFA47F;
+    height: 100px;
+    margin: 16px 30px 50px 80px;
+}
+.two {
+    width: fit-content;
+    border: 3px solid red;
+    background-color: #00235B;
+    padding: 30px;
+    color: #FFA47F;
+    height: 100px;
+    margin: 16px 30px 50px 80px;
